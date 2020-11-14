@@ -1,7 +1,79 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+@import "variables", "reset";
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+  font: $font-stack;
+  color: $main-text;
+  background-color: $bg-color;
+}
+.wrapper {
+  padding: $gap;
+  min-height: 100vh;
+}
+header {
+  height: $gap;
+  position: fixed;
+  background-color: $bg-color;
+  top: 0;
+  left: 0;
+}
+.menu {
+  width: $gap;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transition: translateY(50%);
+}
+.links {
+  width: $gap;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-burger {
+}
+.hero {
+  width: 100%;
+  background-color: $primary-color;
+  height: calc(100vh - 160px);
+  margin: 0 0 $gap;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+    width: 50%;
+    height: calc(100vh - 160px);
+    background-color: $box-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+  &-text {
+    position: relative;
+    z-index: 10;
+  }
+  .info {
+    opacity: 0;
+    display: none;
+  }
+  &:hover {
+    &:before {
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 2s, transform 2s;
+    }
+    .info {
+      display: block;
+      opacity: 1;
+    }
+    .welcome {
+      opacity: 0;
+      display: none;
+    }
+  }
 }

@@ -1,3 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font: 32px Helvetica, sans-serif;
+  color: #5b656e;
+  background-color: #fdf8f538; }
+
+.wrapper {
+  padding: 80px;
+  min-height: 100vh; }
+
+header {
+  height: 80px;
+  position: fixed;
+  background-color: #fdf8f538;
+  top: 0;
+  left: 0; }
+
+.menu {
+  width: 80px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transition: translateY(50%); }
+
+.links {
+  width: 80px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.hero {
+  width: 100%;
+  background-color: #df856c70;
+  height: calc(100vh - 160px);
+  margin: 0 0 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero:before {
+    content: "";
+    width: 50%;
+    height: calc(100vh - 160px);
+    background-color: #e6dcd7e1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0; }
+  .hero-text {
+    position: relative;
+    z-index: 10; }
+  .hero .info {
+    opacity: 0;
+    display: none; }
+  .hero:hover:before {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 2s, transform 2s; }
+  .hero:hover .info {
+    display: block;
+    opacity: 1; }
+  .hero:hover .welcome {
+    opacity: 0;
+    display: none; }
