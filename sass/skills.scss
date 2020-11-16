@@ -1,0 +1,91 @@
+.skills {
+    background-color: $box-color;
+    height: calc(100vh - 160px);
+    margin: $gap 0 $gap;
+    position: relative;
+    padding: $gap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+        font-size: 80px;
+        font-weight: 900;
+        line-height: 94px;
+        margin: 0 0 33px;
+    }
+    .table {
+        display: flex;
+    }
+    .tech {
+        flex-basis: 380px;
+        .type {
+            margin: 0 0 32px;
+        }
+    }
+    .progress {
+        .line {
+            background-color: $brand-color;
+            width: 14px;
+            height: 14px;
+            border-radius: 7px;
+            margin: 12px 0 56px;
+            animation: line 5s ease-in-out 1s forwards;
+        }
+        .html {
+            animation-name: html;
+            @keyframes html {
+                100% {
+                    width: 560px;
+                }
+            }
+        }
+        .layout {
+            animation-name: layout;
+            @keyframes layout {
+                100% {
+                    width: 410px;
+                }
+            }
+        }
+        .bootstrap {
+            animation-name: bootstrap;
+            @keyframes bootstrap {
+                100% {
+                    width: 330px;
+                }
+            }
+        }
+        .jquery {
+            animation-name: jquery;
+            @keyframes jquery {
+                100% {
+                    width: 250px;
+                }
+            }
+        }
+        .preprocessors {
+            animation-name: preprocessors;
+            @keyframes preprocessors {
+                100% {
+                    width: 410px;
+                }
+            }
+        }
+        .gulp {
+            animation-name: gulp;
+            @keyframes gulp {
+                100% {
+                    width: 375px;
+                }
+            }
+        }
+        .git {
+            animation-name: git;
+            @keyframes git {
+                100% {
+                    width: 550px;
+                }
+            }
+        }
+    }
+}

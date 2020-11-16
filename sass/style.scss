@@ -1,4 +1,4 @@
-@import "variables", "reset";
+@import "variables", "reset", "burger", "skills", "projects", "experience";
 
 body {
   font: $font-stack;
@@ -9,30 +9,46 @@ body {
   padding: $gap;
   min-height: 100vh;
 }
-header {
+.header {
   height: $gap;
   position: fixed;
   background-color: $bg-color;
   top: 0;
   left: 0;
-}
-.menu {
-  width: $gap;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transition: translateY(50%);
+  &-name {
+    position: fixed;
+    top: 40px;
+    left: 80px;
+    z-index: 99;
+  }
+  &-language {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 }
 .links {
   width: $gap;
   position: fixed;
+  top: 0;
   right: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.btn-burger {
+  &-item {
+    transition: transform 1s ease;
+    margin: 0 0 10px 25px;
+    opacity: 0.4;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  &-img {
+    width: 32px;
+    height: 32px;
+  }
 }
 .hero {
   width: 100%;
@@ -56,10 +72,27 @@ header {
   &-text {
     position: relative;
     z-index: 10;
+    .welcome {
+      font-size: $gap;
+      font-weight: 900;
+      line-height: 94px;
+    }
   }
   .info {
     opacity: 0;
     display: none;
+    .date {
+      color: $brand-color;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+      display: block;
+    }
+    .title {
+      display: block;
+      font-weight: bold;
+      margin: 0 0 32px;
+    }
   }
   &:hover {
     &:before {
@@ -76,4 +109,12 @@ header {
       display: none;
     }
   }
+}
+.parallax {
+  height: 500px;
+  background: url(../img/parallax.jpg) center / cover no-repeat fixed;
+}
+.adaptive {
+  height: 500px;
+  background: url(../img/adaptive.jpg) center / cover no-repeat fixed;
 }

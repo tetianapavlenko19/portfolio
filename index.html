@@ -5,44 +5,83 @@
     <title>Portfolio Markup Developer</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Tetiana Pavlenko</h1>
-            <button></button>
+    <div id="wrapperID" class="wrapper">
+        <header class="header">
+            <h1 class="header-name">Tetiana Pavlenko</h1>
+            <button class="header-language"></button>
         </header>
         <nav class="menu">
-            <button class="btn-burger"></button>
+            <button id="burgerID" class="btn-burger">
+                <span class="btn-burger-line"></span>
+            </button>
         </nav>
         <ul class="links">
-            <li><a href="#"></a>linkedin</li>
-            <li><a href="#"></a>github</li>
-            <li><a href="#"></a>fb</li>
+            <li class="links-item"><a href="https://www.linkedin.com/in/tetiana-pavlenko-992b2a48"><img
+                        class="links-img" src="img/linkedin.png" alt="linkedin"></a></li>
+            <li class="links-item"><a href="https://github.com/tetianapavlenko19"><img class="links-img"
+                        src="img/github.png" alt="github"></a>
+            </li>
+            <li class="links-item"><a href="https://www.facebook.com/profile.php?id=100002627182883"><img
+                        class="links-img" src="img/fb.png" alt="fb"></a></li>
         </ul>
         <section class="hero">
             <div class="hero-text">
                 <strong class="welcome">WELCOME TEXT</strong>
                 <div class="info">
-                    <span>since 2020</span>
-                    <strong>Markup Developer</strong>
+                    <span class="date">since 2020</span>
+                    <strong class="title">Markup Developer</strong>
                     <p>Strong professional focus to Front-end engineering</p>
                 </div>
         </section>
+        <section class="parallax"></section>
+        <section class="skills">
+            <h2 class="title">SKILLS</h2>
+            <div class="table">
+                <div class="tech">
+                    <div class="type">HTML/CSS</div>
+                    <div class="type">Responsive layout</div>
+                    <div class="type">Bootstrap</div>
+                    <div class="type">jQuery</div>
+                    <div class="type">CSS Preprocessors</div>
+                    <div class="type">gulp</div>
+                    <div class="type">Git</div>
+                </div>
+                <div class="progress">
+                    <div class="line html"></div>
+                    <div class="line layout"></div>
+                    <div class="line bootstrap"></div>
+                    <div class="line jquery"></div>
+                    <div class="line preprocessors"></div>
+                    <div class="line gulp"></div>
+                    <div class="line git"></div>
+                </div>
+            </div>
+        </section>
+        <section class="adaptive"></section>
+        <section class="projects">
+            <h2 class="title">PROJECTS</h2>
+            <div>
+                <h3 class="subtitle">Mylib</h3>
+                <span>Component library with html and css code examples</span>
+                <div class="gitlab"><a class="link" href="#">gitlab</a></div>
+                <h3 class="subtitle">Adaptive Layout Example</h3>
+                <span>html page with burger menu</span>
+                <div class="gitlab"><a class="link" href="#">gitlab</a></div>
+            </div>
+        </section>
+        <section class="experience">
+            <h2 class="title">EXPERIENCE</h2>
+        </section>
     </div>
-    <section class="parallax"></section>
-    <section class="">
-        <h2 class="title">SKILLS</h2>
-    </section>
-    <section class="">
-        <h2 class="title">PROJECTS</h2>
-    </section>
-    <section class="">
-        <h2 class="title">EXPERIENCE</h2>
-    </section>
-
-    </div>
+    <script>
+        burger.onclick = function() {
+            wrapper.classList.toggle("activeBurger");
+        }
+    </script>
 </body>
 
 </html>

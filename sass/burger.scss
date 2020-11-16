@@ -1,0 +1,60 @@
+.menu {
+  width: $gap;
+  position: fixed;
+  top: 50%;
+  left: 55px;
+  height: 31px;
+  z-index: 1;
+  .btn-burger {
+    width: 48px;
+    height: 31px;
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    &-line {
+      width: 48px;
+      height: 5px;
+      background: $icon-color;
+      display: block;
+      transition: 0.5s ease-in-out;
+      &:before,
+      &:after {
+        content: "";
+        width: 48px;
+        height: 5px;
+        background: $icon-color;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        outline: none;
+        top: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+      }
+      &:after {
+        top: 26px;
+      }
+    }
+  }
+}
+.activeBurger {
+  .header {
+    height: 500vh;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .burger-lines {
+    transform: rotate(45deg) translate(-30%, 0);
+    left: 10px;
+
+    &:before {
+      transform: rotate(-90deg) translate(-40%, 0);
+    }
+  }
+}

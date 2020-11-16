@@ -48,8 +48,173 @@ table {
 a {
   text-decoration: none; }
 
+.menu {
+  width: 80px;
+  position: fixed;
+  top: 50%;
+  left: 55px;
+  height: 31px;
+  z-index: 1; }
+  .menu .btn-burger {
+    width: 48px;
+    height: 31px;
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none; }
+    .menu .btn-burger-line {
+      width: 48px;
+      height: 5px;
+      background: #8d949c;
+      display: block;
+      transition: 0.5s ease-in-out; }
+      .menu .btn-burger-line:before, .menu .btn-burger-line:after {
+        content: "";
+        width: 48px;
+        height: 5px;
+        background: #8d949c;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        outline: none;
+        top: 0;
+        left: 0;
+        transition: 0.5s ease-in-out; }
+      .menu .btn-burger-line:after {
+        top: 26px; }
+
+.activeBurger .header {
+  height: 500vh; }
+
+.activeBurger .nav {
+  display: block; }
+
+.activeBurger .burger-lines {
+  transform: rotate(45deg) translate(-30%, 0);
+  left: 10px; }
+  .activeBurger .burger-lines:before {
+    transform: rotate(-90deg) translate(-40%, 0); }
+
+.skills {
+  background-color: #e6dcd79f;
+  height: calc(100vh - 160px);
+  margin: 80px 0 80px;
+  position: relative;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .skills .title {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 94px;
+    margin: 0 0 33px; }
+  .skills .table {
+    display: flex; }
+  .skills .tech {
+    flex-basis: 380px; }
+    .skills .tech .type {
+      margin: 0 0 32px; }
+  .skills .progress .line {
+    background-color: #d1030d;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin: 12px 0 56px;
+    animation: line 5s ease-in-out 1s forwards; }
+  .skills .progress .html {
+    animation-name: html; }
+
+@keyframes html {
+  100% {
+    width: 560px; } }
+  .skills .progress .layout {
+    animation-name: layout; }
+
+@keyframes layout {
+  100% {
+    width: 410px; } }
+  .skills .progress .bootstrap {
+    animation-name: bootstrap; }
+
+@keyframes bootstrap {
+  100% {
+    width: 330px; } }
+  .skills .progress .jquery {
+    animation-name: jquery; }
+
+@keyframes jquery {
+  100% {
+    width: 250px; } }
+  .skills .progress .preprocessors {
+    animation-name: preprocessors; }
+
+@keyframes preprocessors {
+  100% {
+    width: 410px; } }
+  .skills .progress .gulp {
+    animation-name: gulp; }
+
+@keyframes gulp {
+  100% {
+    width: 375px; } }
+  .skills .progress .git {
+    animation-name: git; }
+
+@keyframes git {
+  100% {
+    width: 550px; } }
+
+.projects {
+  background-color: #e6dcd79f;
+  height: calc(100vh - 160px);
+  margin: 80px 0 80px;
+  position: relative;
+  padding: 80px 80px 0;
+  display: flex;
+  flex-direction: column;
+  color: #5b656e; }
+  .projects .title {
+    color: #df856c70;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 94px;
+    margin: 0 0 33px; }
+  .projects .subtitle {
+    font-weight: bold;
+    margin: 0 0 20px; }
+  .projects .gitlab {
+    margin: 0 0 80px; }
+    .projects .gitlab .link {
+      color: #d1030d;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+      text-decoration: underline; }
+
+.experience {
+  background-color: #e6dcd79f;
+  height: calc(100vh - 160px);
+  margin: 80px 0 80px;
+  position: relative;
+  padding: 80px 80px 0;
+  display: flex;
+  flex-direction: column;
+  color: #5b656e; }
+  .experience .title {
+    color: #df856c70;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 94px;
+    margin: 0 0 33px; }
+  .experience .subtitle {
+    font-weight: bold;
+    margin: 0 0 20px; }
+
 body {
-  font: 32px Helvetica, sans-serif;
+  font: 32px/38px Roboto, Helvetica, sans-serif;
   color: #5b656e;
   background-color: #fdf8f538; }
 
@@ -57,28 +222,41 @@ body {
   padding: 80px;
   min-height: 100vh; }
 
-header {
+.header {
   height: 80px;
   position: fixed;
   background-color: #fdf8f538;
   top: 0;
   left: 0; }
-
-.menu {
-  width: 80px;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transition: translateY(50%); }
+  .header-name {
+    position: fixed;
+    top: 40px;
+    left: 80px;
+    z-index: 99; }
+  .header-language {
+    position: fixed;
+    top: 0;
+    right: 0; }
 
 .links {
   width: 80px;
   position: fixed;
+  top: 0;
   right: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .links-item {
+    transition: transform 1s ease;
+    margin: 0 0 10px 25px;
+    opacity: 0.4; }
+    .links-item:hover {
+      transform: scale(1.1);
+      opacity: 1; }
+  .links-img {
+    width: 32px;
+    height: 32px; }
 
 .hero {
   width: 100%;
@@ -93,7 +271,7 @@ header {
     content: "";
     width: 50%;
     height: calc(100vh - 160px);
-    background-color: #e6dcd7e1;
+    background-color: #e6dcd79f;
     position: absolute;
     right: 0;
     top: 0;
@@ -101,9 +279,23 @@ header {
   .hero-text {
     position: relative;
     z-index: 10; }
+    .hero-text .welcome {
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 94px; }
   .hero .info {
     opacity: 0;
     display: none; }
+    .hero .info .date {
+      color: #d1030d;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+      display: block; }
+    .hero .info .title {
+      display: block;
+      font-weight: bold;
+      margin: 0 0 32px; }
   .hero:hover:before {
     opacity: 0;
     transform: translateY(100%);
@@ -114,3 +306,11 @@ header {
   .hero:hover .welcome {
     opacity: 0;
     display: none; }
+
+.parallax {
+  height: 500px;
+  background: url(../img/parallax.jpg) center/cover no-repeat fixed; }
+
+.adaptive {
+  height: 500px;
+  background: url(../img/adaptive.jpg) center/cover no-repeat fixed; }
