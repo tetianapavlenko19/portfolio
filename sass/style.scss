@@ -4,117 +4,118 @@ body {
   font: $font-stack;
   color: $main-text;
   background-color: $bg-color;
-}
-.wrapper {
-  padding: $gap;
-  min-height: 100vh;
-}
-.header {
-  height: $gap;
-  position: fixed;
-  background-color: $bg-color;
-  top: 0;
-  left: 0;
-  &-name {
-    position: fixed;
-    top: 40px;
-    left: 80px;
-    z-index: 99;
-  }
-  &-language {
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-}
-.links {
-  width: $gap;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  &-item {
-    transition: transform 1s ease;
-    margin: 0 0 10px 25px;
-    opacity: 0.4;
-    &:hover {
-      transform: scale(1.1);
-      opacity: 1;
+  .wrapper {
+    padding: $gap;
+    min-height: 100vh;
+    .header {
+      height: $gap;
+      position: fixed;
+      background-color: $bg-color;
+      top: 0;
+      left: 0;
+      &-name {
+        position: fixed;
+        top: 40px;
+        left: 80px;
+        z-index: 99;
+      }
+      &-language {
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+    }
+    .links {
+      width: $gap;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-item {
+        transition: transform 1s ease;
+        margin: 0 0 10px 25px;
+        opacity: 0.5;
+        &:hover {
+          transform: scale(1.05);
+          opacity: 1;
+        }
+      }
+      &-img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .hero {
+      width: 100%;
+      background-color: $primary-color;
+      height: calc(100vh - 160px);
+      margin: 0 0 $gap;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:before {
+        content: "";
+        width: 50%;
+        height: calc(100vh - 160px);
+        background-color: $box-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+      }
+      &-text {
+        position: relative;
+        z-index: 10;
+        .welcome {
+          font-size: $gap;
+          font-weight: 900;
+          line-height: 94px;
+        }
+      }
+      .info {
+        opacity: 0;
+        display: none;
+        width: 600px;
+        .date {
+          color: $brand-color;
+          font-size: 18px;
+          line-height: 22px;
+          font-style: italic;
+          display: block;
+        }
+        .title {
+          display: block;
+          font-weight: bold;
+          margin: 0 0 32px;
+        }
+      }
+      &:hover {
+        &:before {
+          opacity: 0;
+          transform: scaleX(-3);
+          transition: opacity 2s, transform 2s;
+        }
+        .info {
+          display: block;
+          opacity: 1;
+        }
+        .welcome {
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+    .parallax {
+      height: 500px;
+      background: url(../img/parallax.jpg) center / cover no-repeat fixed;
+    }
+    .adaptive {
+      height: 500px;
+      background: url(../img/adaptive.jpg) center / cover no-repeat fixed;
     }
   }
-  &-img {
-    width: 32px;
-    height: 32px;
-  }
-}
-.hero {
-  width: 100%;
-  background-color: $primary-color;
-  height: calc(100vh - 160px);
-  margin: 0 0 $gap;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:before {
-    content: "";
-    width: 50%;
-    height: calc(100vh - 160px);
-    background-color: $box-color;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-  }
-  &-text {
-    position: relative;
-    z-index: 10;
-    .welcome {
-      font-size: $gap;
-      font-weight: 900;
-      line-height: 94px;
-    }
-  }
-  .info {
-    opacity: 0;
-    display: none;
-    .date {
-      color: $brand-color;
-      font-size: 18px;
-      line-height: 22px;
-      font-style: italic;
-      display: block;
-    }
-    .title {
-      display: block;
-      font-weight: bold;
-      margin: 0 0 32px;
-    }
-  }
-  &:hover {
-    &:before {
-      opacity: 0;
-      transform: translateY(100%);
-      transition: opacity 2s, transform 2s;
-    }
-    .info {
-      display: block;
-      opacity: 1;
-    }
-    .welcome {
-      opacity: 0;
-      display: none;
-    }
-  }
-}
-.parallax {
-  height: 500px;
-  background: url(../img/parallax.jpg) center / cover no-repeat fixed;
-}
-.adaptive {
-  height: 500px;
-  background: url(../img/adaptive.jpg) center / cover no-repeat fixed;
 }

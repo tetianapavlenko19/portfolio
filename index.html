@@ -19,69 +19,84 @@
                 <span class="btn-burger-line"></span>
             </button>
         </nav>
+        <div class="flex">
+        <nav class="collaborate">
+            <ul class="list">
+                <li class="list-item"><a class="list-item-link" href="#skills">Skills</a></li>
+                <li class="list-item"><a class="list-item-link" href="#projects">Projects</a></li>
+                <li class="list-item"><a class="list-item-link" href="#experience">Experience</a></li>
+            </ul>
+            <div class="qv">Want to collaborate?</div>
+            <div class="contact">+38066 574 20 57</div>
+            <div class="contact">tpavlenko175@gmail.com</div>
+         </nav>
+        <div class="puzzle"></div>
+        </div>
         <ul class="links">
             <li class="links-item"><a href="https://www.linkedin.com/in/tetiana-pavlenko-992b2a48"><img
-                        class="links-img" src="img/linkedin.png" alt="linkedin"></a></li>
-            <li class="links-item"><a href="https://github.com/tetianapavlenko19"><img class="links-img"
-                        src="img/github.png" alt="github"></a>
-            </li>
-            <li class="links-item"><a href="https://www.facebook.com/profile.php?id=100002627182883"><img
-                        class="links-img" src="img/fb.png" alt="fb"></a></li>
-        </ul>
-        <section class="hero">
-            <div class="hero-text">
-                <strong class="welcome">WELCOME TEXT</strong>
-                <div class="info">
-                    <span class="date">since 2020</span>
-                    <strong class="title">Markup Developer</strong>
-                    <p>Strong professional focus to Front-end engineering</p>
+                class="links-img" src="img/linkedin.png" alt="linkedin"></a></li>
+                <li class="links-item"><a href="https://github.com/tetianapavlenko19"><img class="links-img" src="img/github.png" alt="github"></a>
+                </li>
+                <li class="links-item"><a href="https://www.facebook.com/profile.php?id=100002627182883"><img
+                    class="links-img" src="img/fb.png" alt="fb"></a></li>
+                </ul>
+                <section class="hero">
+                    <div class="hero-text">
+                        <strong class="welcome">WELCOME TEXT</strong>
+                        <div class="info">
+                            <span class="date">since 2020</span>
+                            <strong class="title">Markup Developer</strong>
+                            <p>Strong professional focus and personal interest to Front-end engineering</p>
+                        </div>
+                    </section>
+                    <section class="parallax"></section>
+                    <section id="skills" class="skills">
+                        <h2 class="title">SKILLS</h2>
+                        <div class="table">
+                            <div class="tech">
+                                <div class="type">HTML/CSS</div>
+                                <div class="type">Responsive layout</div>
+                                <div class="type">Bootstrap</div>
+                                <div class="type">jQuery</div>
+                                <div class="type">CSS Preprocessors</div>
+                                <div class="type">gulp</div>
+                                <div class="type">Git</div>
+                            </div>
+                            <div class="progress">
+                                <div class="line html"></div>
+                                <div class="line layout"></div>
+                                <div class="line bootstrap"></div>
+                                <div class="line jquery"></div>
+                                <div class="line preprocessors"></div>
+                                <div class="line gulp"></div>
+                                <div class="line git"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="adaptive"></section>
+                    <section id="projects" class="projects">
+                        <h2 class="title">PROJECTS</h2>
+                        <div>
+                            <h3 class="subtitle">Mylib</h3>
+                            <span>Component library with html and css code examples</span>
+                            <div class="gitlab"><a class="link" href="#">gitlab</a></div>
+                            <h3 class="subtitle">Adaptive Layout Example</h3>
+                            <span>html page with burger menu</span>
+                            <div class="gitlab"><a class="link" href="#">gitlab</a></div>
+                        </div>
+                    </section>
+                    <section id="experience" class="experience">
+                        <h2 class="title">EXPERIENCE</h2>
+                    </section>
                 </div>
-        </section>
-        <section class="parallax"></section>
-        <section class="skills">
-            <h2 class="title">SKILLS</h2>
-            <div class="table">
-                <div class="tech">
-                    <div class="type">HTML/CSS</div>
-                    <div class="type">Responsive layout</div>
-                    <div class="type">Bootstrap</div>
-                    <div class="type">jQuery</div>
-                    <div class="type">CSS Preprocessors</div>
-                    <div class="type">gulp</div>
-                    <div class="type">Git</div>
-                </div>
-                <div class="progress">
-                    <div class="line html"></div>
-                    <div class="line layout"></div>
-                    <div class="line bootstrap"></div>
-                    <div class="line jquery"></div>
-                    <div class="line preprocessors"></div>
-                    <div class="line gulp"></div>
-                    <div class="line git"></div>
-                </div>
-            </div>
-        </section>
-        <section class="adaptive"></section>
-        <section class="projects">
-            <h2 class="title">PROJECTS</h2>
-            <div>
-                <h3 class="subtitle">Mylib</h3>
-                <span>Component library with html and css code examples</span>
-                <div class="gitlab"><a class="link" href="#">gitlab</a></div>
-                <h3 class="subtitle">Adaptive Layout Example</h3>
-                <span>html page with burger menu</span>
-                <div class="gitlab"><a class="link" href="#">gitlab</a></div>
-            </div>
-        </section>
-        <section class="experience">
-            <h2 class="title">EXPERIENCE</h2>
-        </section>
-    </div>
-    <script>
-        burger.onclick = function() {
-            wrapper.classList.toggle("activeBurger");
-        }
-    </script>
-</body>
+                <script type="text/javascript">
+                    let wrapper = document.querySelector("#wrapperID");
+                    let burger = document.querySelector("#burgerID");
 
-</html>
+                    burger.onclick = function () {
+                        wrapper.classList.toggle('menu-open');
+                    }
+                </script>
+            </body>
+
+            </html>

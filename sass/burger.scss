@@ -2,7 +2,7 @@
   width: $gap;
   position: fixed;
   top: 50%;
-  left: 55px;
+  left: 60px;
   height: 31px;
   z-index: 1;
   .btn-burger {
@@ -19,7 +19,7 @@
       height: 5px;
       background: $icon-color;
       display: block;
-      transition: 0.5s ease-in-out;
+      transition: 0.3s ease-in-out;
       &:before,
       &:after {
         content: "";
@@ -32,7 +32,7 @@
         outline: none;
         top: 0;
         left: 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
       &:after {
         top: 26px;
@@ -40,21 +40,69 @@
     }
   }
 }
-.activeBurger {
-  .header {
-    height: 500vh;
+.flex {
+  display: none;
+  height: calc(100vh - 160px);
+  margin: 0 0 $gap;
+  .collaborate {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 43, 63);
+    position: relative;
+    justify-content: center;
+    padding: $gap;
+    flex-grow: 1;
+    color: rgb(240, 248, 252);
+    .list {
+      margin: 0 0 $gap;
+
+      &-item {
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 0 32px;
+        color: rgb(240, 248, 252);
+        &-link {
+          color: rgb(240, 248, 252);
+          &:hover {
+            text-shadow: 2px 2px 4px rgb(248, 166, 42), 0 0 1em rgb(255, 251, 0), 0 0 0.2em blue;
+          }
+        }
+      }
+    }
+    .qv {
+      color: $brand-color;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+      margin: 0 0 $gap;
+    }
+    .contact {
+      font-size: 26px;
+      font-weight: 900;
+      font-style: italic;
+      margin: 0 0 32px;
+    }
   }
-
-  .nav {
-    display: block;
+  .puzzle {
+    width: 50%;
+    background: url(../img/puzzle.jpg) center / cover no-repeat fixed;
   }
-
-  .burger-lines {
-    transform: rotate(45deg) translate(-30%, 0);
-    left: 10px;
-
+}
+.menu-open {
+  .flex {
+    display: flex;
+  }
+  .btn-burger .btn-burger-line {
+    background: transparent;
+    &:after {
+      background: $icon-color;
+    }
     &:before {
-      transform: rotate(-90deg) translate(-40%, 0);
+      background: $icon-color;
+      transform: rotate(45deg) translate(6px, 12px);
+    }
+    &:after {
+      transform: rotate(-45deg) translate(6px, -12px);
     }
   }
 }
