@@ -1,18 +1,17 @@
 .projects {
     background-color: $box-color;
-    height: calc(100vh - 160px);
-    margin: $gap 0 $gap;
+    height: calc(100vh - 80px);
     position: relative;
-    padding: $gap $gap 0;
+    padding: $gap;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    color: $main-text;
     .title {
         color: $primary-color;
         font-size: 80px;
         font-weight: 900;
         line-height: 94px;
-        margin: 0 0 33px;
+        margin: 0 0 $gap;
     }
     .subtitle {
         font-weight: bold;

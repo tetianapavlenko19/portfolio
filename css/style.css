@@ -139,17 +139,18 @@ a {
 
 .skills {
   background-color: #e6dcd79f;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
   position: relative;
   padding: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column; }
   .skills .title {
+    color: #df856c70;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
-    margin: 0 0 33px; }
+    margin: 0 0 80px; }
   .skills .table {
     display: flex; }
   .skills .tech {
@@ -208,19 +209,18 @@ a {
 
 .projects {
   background-color: #e6dcd79f;
-  height: calc(100vh - 160px);
-  margin: 80px 0 80px;
+  height: calc(100vh - 80px);
   position: relative;
-  padding: 80px 80px 0;
+  padding: 80px;
   display: flex;
-  flex-direction: column;
-  color: #5b656e; }
+  justify-content: center;
+  flex-direction: column; }
   .projects .title {
     color: #df856c70;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
-    margin: 0 0 33px; }
+    margin: 0 0 80px; }
   .projects .subtitle {
     font-weight: bold;
     margin: 0 0 20px; }
@@ -235,42 +235,51 @@ a {
 
 .experience {
   background-color: #e6dcd79f;
-  height: calc(100vh - 160px);
-  margin: 80px 0 80px;
   position: relative;
   padding: 80px 80px 0;
   display: flex;
-  flex-direction: column;
-  color: #5b656e; }
+  flex-direction: column; }
   .experience .title {
     color: #df856c70;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
-    margin: 0 0 33px; }
-  .experience .subtitle {
-    font-weight: bold;
-    margin: 0 0 20px; }
+    margin: 0 0 80px; }
+  .experience-info {
+    margin: 0 0 80px; }
+    .experience-info .date {
+      color: #d1030d;
+      font-size: 18px;
+      line-height: 22px;
+      font-style: italic;
+      display: block;
+      margin: 0 0 18px; }
+    .experience-info .subtitle {
+      font-weight: bold;
+      margin: 0 0 18px; }
 
 body {
   font: 32px/38px Roboto, Helvetica, sans-serif;
   color: #5b656e;
-  background-color: #fdf8f538; }
+  background-color: #fffcfa; }
   body .wrapper {
     padding: 80px;
     min-height: 100vh; }
     body .wrapper .header {
       height: 80px;
+      width: 100%;
       position: fixed;
-      background-color: #fdf8f538;
+      background-color: #fffcfa;
       top: 0;
-      left: 0; }
+      left: 0;
+      z-index: 2; }
       body .wrapper .header-name {
+        background-color: #fffcfa;
         position: fixed;
         top: 40px;
-        left: 80px;
-        z-index: 99; }
-      body .wrapper .header-language {
+        left: 80px; }
+      body .wrapper .header-theme {
+        background-color: #fffcfa;
         position: fixed;
         top: 0;
         right: 0; }
@@ -313,7 +322,7 @@ body {
         z-index: 0; }
       body .wrapper .hero-text {
         position: relative;
-        z-index: 10; }
+        z-index: 1; }
         body .wrapper .hero-text .welcome {
           font-size: 80px;
           font-weight: 900;
@@ -334,7 +343,7 @@ body {
           margin: 0 0 32px; }
       body .wrapper .hero:hover:before {
         opacity: 0;
-        transform: scaleX(-3);
+        transform: scaleX(-1.2);
         transition: opacity 2s, transform 2s; }
       body .wrapper .hero:hover .info {
         display: block;
@@ -343,8 +352,22 @@ body {
         opacity: 0;
         display: none; }
     body .wrapper .parallax {
-      height: 500px;
+      height: 50vh;
       background: url(../img/parallax.jpg) center/cover no-repeat fixed; }
     body .wrapper .adaptive {
-      height: 500px;
+      height: 50vh;
       background: url(../img/adaptive.jpg) center/cover no-repeat fixed; }
+    body .wrapper .footer {
+      display: inline-flex;
+      justify-content: space-between;
+      height: 80px;
+      width: 100%;
+      padding: 32px 0 0;
+      background-color: #fffcfa;
+      font-size: 18px;
+      font-weight: 900;
+      font-style: italic; }
+      body .wrapper .footer .qv {
+        display: block;
+        color: #d1030d;
+        margin: 0 0 22px; }

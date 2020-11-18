@@ -1,21 +1,29 @@
 .experience {
     background-color: $box-color;
-    height: calc(100vh - 160px);
-    margin: $gap 0 $gap;
     position: relative;
     padding: $gap $gap 0;
     display: flex;
     flex-direction: column;
-    color: $main-text;
     .title {
         color: $primary-color;
         font-size: 80px;
         font-weight: 900;
         line-height: 94px;
-        margin: 0 0 33px;
+        margin: 0 0 $gap;
     }
-    .subtitle {
-        font-weight: bold;
-        margin: 0 0 20px;
+    &-info {
+        margin: 0 0 $gap;
+        .date {
+            color: $brand-color;
+            font-size: 18px;
+            line-height: 22px;
+            font-style: italic;
+            display: block;
+            margin: 0 0 18px;
+        }
+        .subtitle {
+            font-weight: bold;
+            margin: 0 0 18px;
+        }
     }
 }
