@@ -55,17 +55,17 @@
     color: rgb(240, 248, 252);
     .list {
       margin: 0 0 $gap;
-
       &-item {
         font-weight: 900;
         text-transform: uppercase;
         margin: 0 0 32px;
-        color: rgb(240, 248, 252);
+        transition: transform 300ms ease;
+        &:hover {
+          text-shadow: 2px 2px 4px rgb(248, 166, 42), 0 0 1em rgb(255, 251, 0), 0 0 0.2em blue;
+          transform: scale(1.01);
+        }
         &-link {
           color: rgb(240, 248, 252);
-          &:hover {
-            text-shadow: 2px 2px 4px rgb(248, 166, 42), 0 0 1em rgb(255, 251, 0), 0 0 0.2em blue;
-          }
         }
       }
     }
@@ -77,10 +77,16 @@
       margin: 0 0 $gap;
     }
     .contact {
+      color: rgb(240, 248, 252);
       font-size: 26px;
       font-weight: 900;
       font-style: italic;
       margin: 0 0 32px;
+      transition: transform 300ms ease;
+      &:hover {
+        text-shadow: 2px 2px 4px rgb(248, 166, 42), 0 0 1em rgb(255, 251, 0), 0 0 0.2em blue;
+        transform: scale(1.01);
+      }
     }
   }
   .puzzle {

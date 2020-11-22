@@ -25,5 +25,14 @@
             font-weight: bold;
             margin: 0 0 18px;
         }
+        .link {
+            display: block;
+            color: $brand-color;
+            font-size: 18px;
+            line-height: 22px;
+            font-style: italic;
+            text-decoration: underline;
+            padding: 15px 0 0;
+        }
     }
 }

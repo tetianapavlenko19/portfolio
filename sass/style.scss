@@ -22,10 +22,12 @@ body {
         left: 80px;
       }
       &-theme {
-        background-color: $bg-color;
+        background-color: $primary-color;
+        width: 40px;
+        height: 20px;
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 40px;
+        right: 80px;
       }
     }
     .links {
@@ -69,6 +71,7 @@ body {
         right: 0;
         top: 0;
         z-index: 0;
+        transition: opacity 2s, transform 2s;
       }
       &-text {
         position: relative;
@@ -100,7 +103,6 @@ body {
         &:before {
           opacity: 0;
           transform: scaleX(-1.2);
-          transition: opacity 2s, transform 2s;
         }
         .info {
           display: block;
@@ -130,11 +132,28 @@ body {
       font-size: 18px;
       font-weight: 900;
       font-style: italic;
-        .qv {
-          display: block;
+      .link {
+        color: $main-text;
+        font-weight: 900;
+        padding: 0 200px 0 0;
+      }
+      .qv {
+        display: block;
+        color: $brand-color;
+        margin: 0 0 22px;
+      }
+      .contact {
+        color: $main-text;
+        display: block;
+        font-size: 26px;
+        font-weight: 900;
+        font-style: italic;
+        margin: 0 0 22px;
+        transition: color 300ms;
+        &:hover {
           color: $brand-color;
-          margin: 0 0 22px;
         }
       }
     }
   }
+}
