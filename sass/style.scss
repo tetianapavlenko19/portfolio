@@ -63,6 +63,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0 5px 5px 0 rgba(125, 128, 155, 0.473);
       &:before {
         content: "";
         width: 50%;

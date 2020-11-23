@@ -169,7 +169,7 @@ a {
     height: 14px;
     border-radius: 7px;
     margin: 12px 0 56px;
-    animation: line 3s ease-in-out 0.5s forwards; }
+    animation: line 3s ease-in-out 4s forwards; }
   .skills .progress .html {
     animation-name: html; }
 
@@ -244,7 +244,8 @@ a {
   position: relative;
   padding: 80px 80px 0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  box-shadow: 0 5px 5px 0 rgba(125, 128, 155, 0.473); }
   .experience .title {
     color: #e498aa;
     font-size: 80px;
@@ -327,7 +328,8 @@ body {
       position: relative;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      box-shadow: 0 5px 5px 0 rgba(125, 128, 155, 0.473); }
       body .wrapper .hero:before {
         content: "";
         width: 50%;
