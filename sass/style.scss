@@ -119,9 +119,42 @@ body {
       height: 50vh;
       background: url(../img/parallax.jpg) center / cover no-repeat fixed;
     }
-    .adaptive {
-      height: 50vh;
-      background: url(../img/adaptive.jpg) center / cover no-repeat fixed;
+    .responsive {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow-x: hidden;
+      .background {
+        background-image: url(../img/adaptive.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        height: 100vh;
+        font-weight: bold;
+        font-size: 12rem;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: start;
+        align-items: center;
+        -webkit-box-pack: end;
+        justify-content: center;
+        overflow: hidden;
+        &:before {
+          content: "";
+          background-image: inherit;
+          background-size: cover;
+          background-position: 50% 50%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -2;
+        }
+      }
     }
     .footer {
       display: inline-flex;
