@@ -1,5 +1,6 @@
 @import "variables", "reset", "burger", "skills", "projects", "experience";
 
+/* project styles */
 body {
   font: $font-stack;
   color: $main-text;
@@ -42,7 +43,7 @@ body {
       &-item {
         transition: transform 1s ease;
         margin: 0 0 10px 25px;
-        opacity: 0.5;
+        opacity: 0.7;
         &:hover {
           transform: scale(1.05);
           opacity: 1;
@@ -139,7 +140,7 @@ body {
       }
       .qv {
         display: block;
-        color: $brand-color;
+        color: $primary-color;
         margin: 0 0 22px;
       }
       .contact {
@@ -151,7 +152,188 @@ body {
         margin: 0 0 22px;
         transition: color 300ms;
         &:hover {
-          color: $brand-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1010px) {
+  body {
+    font-size: 24px;
+    line-height: 26px;
+    .wrapper {
+      width: calc(100% - 96px);
+      padding: 48px;
+      .header {
+        height: 48px;
+        width: 100%;
+        &-name {
+          top: 20px;
+          left: 48px;
+        }
+      }
+      .menu {
+        width: 48px;
+        left: 25px;
+        height: 31px;
+      }
+      .flex {
+        display: none;
+        height: calc(100vh - 96px);
+        margin: 0 0 24px;
+        .collaborate {
+          padding: 48px;
+          .list {
+            margin: 0 0 48px;
+          }
+          .qv {
+            margin: 0 0 48px;
+          }
+        }
+        .puzzle {
+          display: none;
+        }
+      }
+      .links {
+        width: 48px;
+        &-item {
+          margin: 0 0 10px 8px;
+        }
+      }
+      .hero {
+        height: calc(100vh - 96px);
+        margin: 0 0 48px;
+        &:before {
+          height: calc(100vh - 96px);
+        }
+        &-text {
+          .welcome {
+            font-size: 52px;
+          }
+        }
+        .info {
+          width: 500px;
+          .date {
+            font-size: 14px;
+          }
+          .title {
+            margin: 0 0 22px;
+          }
+        }
+      }
+      .skills {
+        height: calc(100vh - 48px);
+        padding: 48px 24px 48px 48px;
+        .title {
+          font-size: 52px;
+          margin: 0 0 48px;
+        }
+        .tech {
+          font-size: 24px;
+          flex-basis: 230px;
+          .type {
+            margin: 0 0 32px;
+          }
+        }
+        .progress {
+          .line {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin: 7px 0 48.5px;
+            animation: line 3s ease-in-out 0.5s forwards;
+          }
+          .html {
+            animation-name: html;
+            @keyframes html {
+              100% {
+                width: 360px;
+              }
+            }
+          }
+          .layout {
+            animation-name: layout;
+            @keyframes layout {
+              100% {
+                width: 270px;
+              }
+            }
+          }
+          .bootstrap {
+            animation-name: bootstrap;
+            @keyframes bootstrap {
+              100% {
+                width: 220px;
+              }
+            }
+          }
+          .jquery {
+            animation-name: jquery;
+            @keyframes jquery {
+              100% {
+                width: 250px;
+              }
+            }
+          }
+          .preprocessors {
+            animation-name: preprocessors;
+            @keyframes preprocessors {
+              100% {
+                width: 160px;
+              }
+            }
+          }
+          .gulp {
+            animation-name: gulp;
+            @keyframes gulp {
+              100% {
+                width: 250px;
+              }
+            }
+          }
+          .git {
+            animation-name: git;
+            @keyframes git {
+              100% {
+                width: 350px;
+              }
+            }
+          }
+        }
+      }
+      .projects {
+        height: calc(100vh - 48px);
+        padding: 48px;
+        .title {
+          font-size: 52px;
+          margin: 0 0 48px;
+        }
+        .github {
+          margin: 0 0 48px;
+        }
+      }
+      .experience {
+        padding: 48px 48px 0;
+        .title {
+          font-size: 52px;
+          margin: 0 0 32px;
+        }
+        &-info {
+          margin: 0 0 48px;
+        }
+      }
+      .footer {
+        height: 48px;
+        padding: 22px 0 0;
+        .qv {
+          margin: 0 0 10px;
+        }
+        .contact {
+          font-size: 20px;
+          margin: 0 0 14px;
         }
       }
     }

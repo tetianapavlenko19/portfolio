@@ -67,14 +67,14 @@ a {
     .menu .btn-burger-line {
       width: 48px;
       height: 5px;
-      background: #8d949c;
+      background: #777b7e;
       display: block;
       transition: 0.3s ease-in-out; }
       .menu .btn-burger-line:before, .menu .btn-burger-line:after {
         content: "";
         width: 48px;
         height: 5px;
-        background: #8d949c;
+        background: #777b7e;
         display: block;
         position: absolute;
         cursor: pointer;
@@ -92,7 +92,7 @@ a {
   .flex .collaborate {
     display: flex;
     flex-direction: column;
-    background-color: #2b2b3f;
+    background-color: #1f1f47;
     position: relative;
     justify-content: center;
     padding: 80px;
@@ -109,9 +109,9 @@ a {
           text-shadow: 2px 2px 4px #f8a62a, 0 0 1em #fffb00, 0 0 0.2em blue;
           transform: scale(1.01); }
         .flex .collaborate .list-item-link {
-          color: #f0f8fc; }
+          color: #f8fbfc; }
     .flex .collaborate .qv {
-      color: #e7717d;
+      color: #e498aa;
       font-size: 18px;
       line-height: 22px;
       font-style: italic;
@@ -136,23 +136,23 @@ a {
 .menu-open .btn-burger .btn-burger-line {
   background: transparent; }
   .menu-open .btn-burger .btn-burger-line:after {
-    background: #8d949c; }
+    background: #777b7e; }
   .menu-open .btn-burger .btn-burger-line:before {
-    background: #8d949c;
+    background: #777b7e;
     transform: rotate(45deg) translate(6px, 12px); }
   .menu-open .btn-burger .btn-burger-line:after {
     transform: rotate(-45deg) translate(6px, -12px); }
 
 .skills {
-  background-color: #e6dcd79f;
+  background-color: #969163;
   height: calc(100vh - 80px);
   position: relative;
-  padding: 80px;
+  padding: 80px 24px 80px 80px;
   display: flex;
   justify-content: center;
   flex-direction: column; }
   .skills .title {
-    color: #df856c70;
+    color: #e498aa;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
@@ -164,7 +164,7 @@ a {
     .skills .tech .type {
       margin: 0 0 32px; }
   .skills .progress .line {
-    background-color: #e7717d;
+    background-color: #d1c5c5;
     width: 14px;
     height: 14px;
     border-radius: 7px;
@@ -214,7 +214,7 @@ a {
     width: 550px; } }
 
 .projects {
-  background-color: #e6dcd79f;
+  background-color: #969163;
   height: calc(100vh - 80px);
   position: relative;
   padding: 80px;
@@ -222,7 +222,7 @@ a {
   justify-content: center;
   flex-direction: column; }
   .projects .title {
-    color: #df856c70;
+    color: #e498aa;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
@@ -230,31 +230,31 @@ a {
   .projects .subtitle {
     font-weight: bold;
     margin: 0 0 20px; }
-  .projects .gitlab {
+  .projects .github {
     margin: 0 0 80px; }
-    .projects .gitlab .link {
-      color: #e7717d;
+    .projects .github .link {
+      color: #d1c5c5;
       font-size: 18px;
       line-height: 22px;
       font-style: italic;
       text-decoration: underline; }
 
 .experience {
-  background-color: #e6dcd79f;
+  background-color: #969163;
   position: relative;
   padding: 80px 80px 0;
   display: flex;
   flex-direction: column; }
   .experience .title {
-    color: #df856c70;
+    color: #e498aa;
     font-size: 80px;
     font-weight: 900;
     line-height: 94px;
-    margin: 0 0 80px; }
+    margin: 0 0 48px; }
   .experience-info {
-    margin: 0 0 80px; }
+    margin: 0 0 60px; }
     .experience-info .date {
-      color: #e7717d;
+      color: #d1c5c5;
       font-size: 18px;
       line-height: 22px;
       font-style: italic;
@@ -265,17 +265,18 @@ a {
       margin: 0 0 18px; }
     .experience-info .link {
       display: block;
-      color: #e7717d;
+      color: #d1c5c5;
       font-size: 18px;
       line-height: 22px;
       font-style: italic;
       text-decoration: underline;
       padding: 15px 0 0; }
 
+/* project styles */
 body {
   font: 32px/38px Roboto, Helvetica, sans-serif;
-  color: #5b656e;
-  background-color: #fffcfa; }
+  color: #4e4e50;
+  background-color: #e6e3e1; }
   body .wrapper {
     padding: 80px;
     min-height: 100vh; }
@@ -283,17 +284,17 @@ body {
       height: 80px;
       width: 100%;
       position: fixed;
-      background-color: #fffcfa;
+      background-color: #e6e3e1;
       top: 0;
       left: 0;
       z-index: 2; }
       body .wrapper .header-name {
-        background-color: #fffcfa;
+        background-color: #e6e3e1;
         position: fixed;
         top: 40px;
         left: 80px; }
       body .wrapper .header-theme {
-        background-color: #df856c70;
+        background-color: #e498aa;
         width: 40px;
         height: 20px;
         position: fixed;
@@ -311,7 +312,7 @@ body {
       body .wrapper .links-item {
         transition: transform 1s ease;
         margin: 0 0 10px 25px;
-        opacity: 0.5; }
+        opacity: 0.7; }
         body .wrapper .links-item:hover {
           transform: scale(1.05);
           opacity: 1; }
@@ -320,7 +321,7 @@ body {
         height: 32px; }
     body .wrapper .hero {
       width: 100%;
-      background-color: #df856c70;
+      background-color: #e498aa;
       height: calc(100vh - 160px);
       margin: 0 0 80px;
       position: relative;
@@ -331,7 +332,7 @@ body {
         content: "";
         width: 50%;
         height: calc(100vh - 160px);
-        background-color: #e6dcd79f;
+        background-color: #969163;
         position: absolute;
         right: 0;
         top: 0;
@@ -349,7 +350,7 @@ body {
         display: none;
         width: 600px; }
         body .wrapper .hero .info .date {
-          color: #e7717d;
+          color: #d1c5c5;
           font-size: 18px;
           line-height: 22px;
           font-style: italic;
@@ -379,20 +380,20 @@ body {
       height: 80px;
       width: 100%;
       padding: 32px 0 0;
-      background-color: #fffcfa;
+      background-color: #e6e3e1;
       font-size: 18px;
       font-weight: 900;
       font-style: italic; }
       body .wrapper .footer .link {
-        color: #5b656e;
+        color: #4e4e50;
         font-weight: 900;
         padding: 0 200px 0 0; }
       body .wrapper .footer .qv {
         display: block;
-        color: #e7717d;
+        color: #e498aa;
         margin: 0 0 22px; }
       body .wrapper .footer .contact {
-        color: #5b656e;
+        color: #4e4e50;
         display: block;
         font-size: 26px;
         font-weight: 900;
@@ -400,4 +401,127 @@ body {
         margin: 0 0 22px;
         transition: color 300ms; }
         body .wrapper .footer .contact:hover {
-          color: #e7717d; }
+          color: #e498aa; }
+
+/* tablet */
+@media only screen and (min-width: 769px) and (max-width: 1010px) {
+  body {
+    font-size: 24px;
+    line-height: 26px; }
+    body .wrapper {
+      width: calc(100% - 96px);
+      padding: 48px; }
+      body .wrapper .header {
+        height: 48px;
+        width: 100%; }
+        body .wrapper .header-name {
+          top: 20px;
+          left: 48px; }
+      body .wrapper .menu {
+        width: 48px;
+        left: 25px;
+        height: 31px; }
+      body .wrapper .flex {
+        display: none;
+        height: calc(100vh - 96px);
+        margin: 0 0 24px; }
+        body .wrapper .flex .collaborate {
+          padding: 48px; }
+          body .wrapper .flex .collaborate .list {
+            margin: 0 0 48px; }
+          body .wrapper .flex .collaborate .qv {
+            margin: 0 0 48px; }
+        body .wrapper .flex .puzzle {
+          display: none; }
+      body .wrapper .links {
+        width: 48px; }
+        body .wrapper .links-item {
+          margin: 0 0 10px 8px; }
+      body .wrapper .hero {
+        height: calc(100vh - 96px);
+        margin: 0 0 48px; }
+        body .wrapper .hero:before {
+          height: calc(100vh - 96px); }
+        body .wrapper .hero-text .welcome {
+          font-size: 52px; }
+        body .wrapper .hero .info {
+          width: 500px; }
+          body .wrapper .hero .info .date {
+            font-size: 14px; }
+          body .wrapper .hero .info .title {
+            margin: 0 0 22px; }
+      body .wrapper .skills {
+        height: calc(100vh - 48px);
+        padding: 48px 24px 48px 48px; }
+        body .wrapper .skills .title {
+          font-size: 52px;
+          margin: 0 0 48px; }
+        body .wrapper .skills .tech {
+          font-size: 24px;
+          flex-basis: 230px; }
+          body .wrapper .skills .tech .type {
+            margin: 0 0 32px; }
+        body .wrapper .skills .progress .line {
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          margin: 7px 0 48.5px;
+          animation: line 3s ease-in-out 0.5s forwards; }
+        body .wrapper .skills .progress .html {
+          animation-name: html; }
+  @keyframes html {
+    100% {
+      width: 360px; } }
+        body .wrapper .skills .progress .layout {
+          animation-name: layout; }
+  @keyframes layout {
+    100% {
+      width: 270px; } }
+        body .wrapper .skills .progress .bootstrap {
+          animation-name: bootstrap; }
+  @keyframes bootstrap {
+    100% {
+      width: 220px; } }
+        body .wrapper .skills .progress .jquery {
+          animation-name: jquery; }
+  @keyframes jquery {
+    100% {
+      width: 250px; } }
+        body .wrapper .skills .progress .preprocessors {
+          animation-name: preprocessors; }
+  @keyframes preprocessors {
+    100% {
+      width: 160px; } }
+        body .wrapper .skills .progress .gulp {
+          animation-name: gulp; }
+  @keyframes gulp {
+    100% {
+      width: 250px; } }
+        body .wrapper .skills .progress .git {
+          animation-name: git; }
+  @keyframes git {
+    100% {
+      width: 350px; } }
+      body .wrapper .projects {
+        height: calc(100vh - 48px);
+        padding: 48px; }
+        body .wrapper .projects .title {
+          font-size: 52px;
+          margin: 0 0 48px; }
+        body .wrapper .projects .github {
+          margin: 0 0 48px; }
+      body .wrapper .experience {
+        padding: 48px 48px 0; }
+        body .wrapper .experience .title {
+          font-size: 52px;
+          margin: 0 0 32px; }
+        body .wrapper .experience-info {
+          margin: 0 0 48px; }
+      body .wrapper .footer {
+        height: 48px;
+        padding: 22px 0 0; }
+        body .wrapper .footer .qv {
+          margin: 0 0 10px; }
+        body .wrapper .footer .contact {
+          font-size: 20px;
+          margin: 0 0 14px; } }

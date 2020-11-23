@@ -2,7 +2,7 @@
     background-color: $box-color;
     height: calc(100vh - 80px);
     position: relative;
-    padding: $gap;
+    padding: $gap 24px $gap $gap;
     display: flex;
     justify-content: center;
     flex-direction: column;
