@@ -193,7 +193,7 @@ body {
 }
 
 /* tablet */
-@media only screen and (min-width: 769px) and (max-width: 1010px) {
+@media only screen and (min-width: 769px) and (max-width: 1150px) {
   body {
     font-size: 24px;
     line-height: 26px;
@@ -209,9 +209,7 @@ body {
         }
       }
       .menu {
-        width: 48px;
-        left: 25px;
-        height: 31px;
+        display: none;
       }
       .flex {
         display: none;
@@ -370,5 +368,11 @@ body {
         }
       }
     }
+  }
+}
+/* mobile */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    display: none;
   }
 }
