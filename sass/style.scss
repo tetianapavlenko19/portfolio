@@ -164,7 +164,7 @@ body {
       width: 100%;
       padding: 32px 0 0;
       background-color: $bg-color;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 900;
       font-style: italic;
       .link {
@@ -174,7 +174,7 @@ body {
       }
       .qv {
         display: block;
-        color: $primary-color;
+        color: $brand-color;
         margin: 0 0 22px;
       }
       .contact {
@@ -186,7 +186,7 @@ body {
         margin: 0 0 22px;
         transition: color 300ms;
         &:hover {
-          color: $primary-color;
+          color: $brand-color;
         }
       }
     }
