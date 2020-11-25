@@ -212,23 +212,6 @@ body {
       .menu {
         display: none;
       }
-      .flex {
-        display: none;
-        height: calc(100vh - 96px);
-        margin: 0 0 24px;
-        .collaborate {
-          padding: 48px;
-          .list {
-            margin: 0 0 48px;
-          }
-          .qv {
-            margin: 0 0 48px;
-          }
-        }
-        .puzzle {
-          display: none;
-        }
-      }
       .links {
         width: 48px;
         &-item {
@@ -351,10 +334,10 @@ body {
         padding: 48px 48px 0;
         .title {
           font-size: 52px;
-          margin: 0 0 32px;
+          margin: 0 0 22px;
         }
         &-info {
-          margin: 0 0 48px;
+          margin: 0 0 40px;
         }
       }
       .footer {

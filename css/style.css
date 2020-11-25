@@ -128,7 +128,7 @@ a {
         transform: scale(1.01); }
   .flex .puzzle {
     width: 50%;
-    background: url(../img/puzzle.jpg) center/cover no-repeat fixed; }
+    background: url(../img/puzzle.jpg) center/contain no-repeat fixed; }
 
 .menu-open .flex {
   display: flex; }
@@ -451,18 +451,6 @@ body {
           left: 48px; }
       body .wrapper .menu {
         display: none; }
-      body .wrapper .flex {
-        display: none;
-        height: calc(100vh - 96px);
-        margin: 0 0 24px; }
-        body .wrapper .flex .collaborate {
-          padding: 48px; }
-          body .wrapper .flex .collaborate .list {
-            margin: 0 0 48px; }
-          body .wrapper .flex .collaborate .qv {
-            margin: 0 0 48px; }
-        body .wrapper .flex .puzzle {
-          display: none; }
       body .wrapper .links {
         width: 48px; }
         body .wrapper .links-item {
@@ -544,9 +532,9 @@ body {
         padding: 48px 48px 0; }
         body .wrapper .experience .title {
           font-size: 52px;
-          margin: 0 0 32px; }
+          margin: 0 0 22px; }
         body .wrapper .experience-info {
-          margin: 0 0 48px; }
+          margin: 0 0 40px; }
       body .wrapper .footer {
         height: 48px;
         padding: 22px 0 0; }

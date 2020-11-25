@@ -91,7 +91,7 @@
   }
   .puzzle {
     width: 50%;
-    background: url(../img/puzzle.jpg) center / cover no-repeat fixed;
+    background: url(../img/puzzle.jpg) center / contain no-repeat fixed;
   }
 }
 .menu-open {
